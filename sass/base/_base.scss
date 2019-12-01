@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* to force box-sizing inherit */
+  box-sizing: inherit;
+}
+
+html {
+  /* enable user to change pixel */
+  font-size: 10px;
+}
+
+body {
+  box-sizing: border-box;
+}
