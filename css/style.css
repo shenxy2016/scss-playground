@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.7;
+  color: #777;
+  padding: 30px;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #7ed56fbd, #28b485a5),
+    url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  /* bottom middle */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  position: relative;
+}
+
+.logo-box {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.logo {
+  height: 35px;
+}
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+
+  /* backface-visibility: hidden; */
+}
+
+.text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  /* to make sure element in the center */
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 60px;
+  font-weight: 400;
+  letter-spacing: 35px;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: east-out;
+  /* animation-delay: 0.2s; */
+  /* animation-iteration-count: 3; */
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 17.4px;
+  animation: moveInRight 1s ease-in;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  60% {
+    transform: rotate(120deg);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
