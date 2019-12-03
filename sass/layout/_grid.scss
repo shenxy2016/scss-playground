@@ -1,6 +1,6 @@
 .row {
   width: $grid-width;
-  background-color: #eee;
+  // background-color: #eee;
   margin: 0 auto;
 
   &:not(:last-child) {
@@ -14,7 +14,7 @@
     &:not(:last-child) {
       margin-right: $gutter-horizontal;
     }
-    background-color: orangered;
+    // background-color: orangered;
   }
 
   .col-1-of-2 {
