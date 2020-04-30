@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/shenxy2016/scss-playground#readme",
   "dependencies": {
-    "jquery": "^3.4.1"
+    "jquery": "^3.5.0"
   },
   "devDependencies": {
     "node-sass": "^4.13.0"
